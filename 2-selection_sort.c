@@ -14,7 +14,7 @@ void selection_sort(int *array, size_t size)
 
 	if (size <= 0 || !size || !array)
 		return;
-	for (i = 0; i < size - 1; i++)
+	for (i = 0; i < size; i++)
 	{
 		tmp = array[i];
 		tmp1 = array[i];
