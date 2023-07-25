@@ -10,14 +10,15 @@
 void selection_sort(int *array, size_t size)
 {
 	int tmp1;
-	size_t i = 0, j = 0, index = 0;
+	size_t i = 0, j = 0, index;
 
 	if (size <= 0 || !size || !array)
 		return;
 	for (i = 0; i < size - 1; i++)
 	{
+		index = i;
 		tmp1 = array[i];
-		for (j = i; j < size; j++)
+		for (j = i + 1; j < size; j++)
 		{
 			if (array[index] > array[j])
 			{
